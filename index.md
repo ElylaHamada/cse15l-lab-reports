@@ -24,6 +24,5 @@ What these final examples show us is that the `cd` command only works with direc
 javac Hello.java
 java Hello messages/en-us.txt
 ```
-
-
+> With all of these 9 examples, we can see how these commands work with no arguments, with a path to a directory as an argument and a path to a file as an argument. 
 

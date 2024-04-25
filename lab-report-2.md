@@ -13,57 +13,57 @@ The methods in my code that were called were the main method and within the main
 
 _Question 2_
 
-> __handleRequest method in the Handler class:__
+> __`handleRequest` method in the `Handler` class:__
 
-- Argument: URI url
-- Fields used: num (an integer field), chatHistory (an ArrayList of strings)
+- Argument: `URI url`
+- Fields used: `num` (an integer field), `chatHistory` (an ArrayList of strings)
   
-> __handle method in the ServerHttpHandler class:__
+> __`handle` method in the `ServerHttpHandler` class:__
 
-- Argument: HttpExchange exchange
-- Fields used: handler (an instance of the URLHandler interface)
+- Argument: `HttpExchange exchange`
+- Fields used: `handler` (an instance of the URLHandler interface)
 
-> __start method in the Server class:__
+> __`start` method in the Server class:__
 
-- Arguments: int port and URLHandler handler
+- Arguments: `int port` and `URLHandler handler`
   
-> __main method in the ChatServer and NumberServer classes:__
+> __`main` method in the `ChatServer` and `NumberServer` classes:__
 
-- Argument: String[] args
+- Argument: `String[] args`
   
 _Question 3_
 
-The values of the num field and the chatHistory field in the Handler class could potentially change based on the specific request /add-message?s=Hello&user=jpolitz. If the request involves adding the message "Hello" from the user "jpolitz" to the chat history, these fields may get updated. 
+The values of the `num` field and the `chatHistory` field in the `Handler` class could potentially change based on the specific request `/add-message?s=Hello&user=jpolitz`. If the request involves adding the message `"Hello"` from the user `"jpolitz"` to the chat history, these fields may get updated. 
 
 <img width="909" alt="Screenshot 2024-04-24 at 20 38 24" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/8b00dd7e-1aa2-4338-962b-be409e1ba608">
 
 _Question 1_
 
-The methods in my code that were called were the main method and within the main method, the Server.start method was called which creates an instance of the HttpServer class and sets up the server to listen on the specified port. When a request is received, the handle method of the ServerHttpHandler is called. This method is responsible for processing the request and generating the response.Inside the handle method, the handleRequest method of the Handler class is called. This method is responsible for handling the specific request path and returning the appropriate response. In the Handler class, the handleRequest method checks if the request path contains "/add-message". If it does, it further processes the query parameters "s" and "user" to extract the message and user information.
+The methods in my code that were called were the `main` method and within the `main` method, the `Server.start` method was called which creates an instance of the `HttpServer` class and sets up the server to listen on the specified port. When a request is received, the `handle` method of the `ServerHttpHandler` is called. This method is responsible for processing the request and generating the response. Inside the `handle` method, the `handleRequest` method of the `Handler` class is called. This method is responsible for handling the specific request path and returning the appropriate response. In the `Handler` class, the `handleRequest` method checks if the request path contains `"/add-message"`. If it does, it further processes the query parameters `"s"` and `"user"` to extract the message and user information.
 
 _Question 2_
 
-> __handleRequest method in the Handler class:__
+> __`handleRequest` method in the `Handler` class:__
 
-- Argument: URI url
-- Fields used: num (an integer field), chatHistory (an ArrayList of strings)
+- Argument: `URI url`
+- Fields used: `num` (an integer field), `chatHistory` (an ArrayList of strings)
   
-> __handle method in the ServerHttpHandler class:__
+> __`handle` method in the `ServerHttpHandler` class:__
 
-- Argument: HttpExchange exchange
-- Fields used: handler (an instance of the URLHandler interface)
+- Argument: `HttpExchange exchange`
+- Fields used: `handler` (an instance of the URLHandler interface)
 
-> __start method in the Server class:__
+> __`start` method in the Server class:__
 
-- Arguments: int port and URLHandler handler
+- Arguments: `int port` and `URLHandler handler`
   
-> __main method in the ChatServer and NumberServer classes:__
+> __`main` method in the `ChatServer` and `NumberServer` classes:__
 
-- Argument: String[] args
+- Argument: `String[] args`
   
 _Question 3_
 
-The values of the num field and the chatHistory field in the Handler class could potentially change based on the specific request /add-message?s=Hello&user=jpolitz. If the request involves adding the message "Hello" from the user "jpolitz" to the chat history, these fields may get updated. 
+The values of the `num` field and the `chatHistory` field in the `Handler` class could potentially change based on the specific request `/add-message?s=Hello&user=jpolitz`. If the request involves adding the message "Hello" from the user "jpolitz" to the chat history, these fields may get updated. 
 
 ## Part 2
 

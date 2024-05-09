@@ -336,4 +336,3 @@ Output:
 This can be more useful than -name if we do not care about cases of our searches as it is more effective. Unlike -name, this can be especially helpful when sometimes we are inconsistent about case choices, which can prevent us from missing some files
 
 
-

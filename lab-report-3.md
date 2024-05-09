@@ -251,7 +251,7 @@ Output:
 nothing was shown
 ```
 
-In this second example we are using the `-newermt` to find anything new that was created after today, being 05/08/2023, in which there was nothing printed since there was nothing new created after today.
+In this second example, we are using the `-newermt` to find anything new that was created after today, being 05/08/2023, in which there was nothing printed since there was nothing new created after today.
 
 This option is useful when we want to look at files that are modified or directories in certain periods of time after a certain date. It can also help us track our work. 
 

@@ -2,7 +2,7 @@
 
 ## Step 4
 
-ssh echamada@ieng6.ucsd.edu
+`ssh echamada@ieng6.ucsd.edu`
 
 <img width="751" alt="Screenshot 2024-06-04 at 12 41 25" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/91c1fd11-6abc-4199-995f-5527992545d4">
 

@@ -1,41 +1,37 @@
-# Lab Report 4
+# Lab Report 5
+## Elyla Hamada / echamada@ucsd.edu
+## CSE 15L
 
-## Step 4
+# Part 1. Debugging Scenario
+# Piazza Post
+**What environment are you using?**
+I am running code on the software VS Code on MacBook Pro.
 
-`ssh echamada@ieng6.ucsd.edu`
+**Describe the symptom that you are seeing. Be specific and make sure to include what you are seeing and what you expect to see.**
 
-<img width="751" alt="Screenshot 2024-06-04 at 12 41 25" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/91c1fd11-6abc-4199-995f-5527992545d4">
+<img width="480" alt="Screenshot 2024-06-10 at 22 21 19" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/2d1b6bdb-5f60-49d4-a252-1231930391d3">
 
-## Step 5
-First step was that I forked the given repository into my GitHub account and then cloned the repository into VSCode in my ssh account.
+Above is the error that I have been receiving. The command that I ran was based on the wavelet lab, but it tosses an error because it says that the main class could not be found.
 
-<img width="751" alt="Screenshot 2024-06-04 at 12 43 09" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/9617a446-fab0-4194-877d-f44a93db1983">
+I had input `vim NumberServer.java` to see if there were any errors that I was missing or any bugs within the code
 
-## Step 6
+**Detail the failure-inducing input and context. That might mean any or all of the commands you're running, a test case, command-line arguments, a working directory, and even the last few commands you ran.**
+The input that I put after compiling both java files was `java NumberServer.java Server.java` I am using the commands provided by Week 2.
 
-To run tests, I changed directory into lab7 by `cd lab7` and then did `bash test.sh` to run the tests and it showed one failure.
+## TA Response
+Please look through the command in week 2's lab carefully. When running the java command, what is the `.java` file that you are running it against? Please read through the code for both Java files as well.
 
-<img width="751" alt="Screenshot 2024-06-04 at 12 43 53" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/7d079b12-9168-4ce4-bb7e-fe48d6cafb71">
+## Terminal Output
+Oh okay, thank you! I read through the lab again and saw that I was missing the port number to get the server started.
+<img width="830" alt="Screenshot 2024-06-10 at 23 30 50" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/617fa94c-7ffc-4972-803b-50c299820ec7">
 
-## Step 7
+## Setup
+- Fork https://github.com/ucsd-cse15l-s24/wavelet in a SSH ieng6 and navigate to the `/wavelet` directory
+- The contents from the forked repository are unmodified
+- The input is `javac NumberServer.java Server.java`
+- To fix the bug, input the port number after compiling both files together
 
-I typed ```vim ListExamples.java```, to fix the errors. My keystrokes were ```<shift + G>, <up>, <up>, <up>, <up>, <up>, <up>, e, x, i, 2, <esc>, <:wq>```.
+## Part 2. Reflection
+Through CSE 15L, I've learned how to navigate through Java easier and I enjoyed learning VIM functions. With taking other CS classes before, I had to go to tutoring hours a lot to get help in debugging my errors but with this class, it is now more easier to understand the bugs in the file and how to debug them.
 
-To fix the first error, I removed the 0 in the line 15 which was initially `result.add(0, s);` and changed it to `result.add(s);`
 
-The second error was in line 44 where the code stated `index1 += 1;` in reference to index2, so I changed it to `index2 += 1;`
-
-<img width="751" alt="Screenshot 2024-06-04 at 12 48 24" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/b73dd800-e101-4e33-bc60-f5d9063c24a5">
-
-<img width="751" alt="Screenshot 2024-06-04 at 12 48 10" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/52fb5626-af18-45c4-b62b-06a7b6cbc2a0">
-
-## Step 8
-To retest the tests after fixing them, I inputted the bash command `bash test.sh` again to see that there is no more errors
-<img width="751" alt="Screenshot 2024-06-04 at 13 15 37" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/5c283c04-0e57-47cf-80e3-0f6108e9fa64">
-
-## Step 9
-
-To commit and push the changes onto github i first put the commang `git add *.java` which will ready all the fiels in the lab7 directory. Then I used `git commit -m "now passing both tests"` which saves all the changes we did and also commits the messages "now passing both tests".
-Lastly, to upload these changes to the lab7 repo on github, I used the command `git push origin  main`
-
-<img width="751" alt="Screenshot 2024-06-04 at 13 14 44" src="https://github.com/ElylaHamada/cse15l-lab-reports/assets/130731509/2de5b67f-dbcb-4276-8bbf-69aab7f54d64">
